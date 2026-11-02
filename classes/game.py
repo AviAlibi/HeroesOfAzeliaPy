@@ -191,7 +191,8 @@ class Game:
         for effect in card.effects:
             for unit in self._targets(owner, effect, selected, caster):
                 self._resolve(effect, unit, instance_id if card.kind == "enchant" else None)
-        self.events.append(f"Player {owner} played {card.name}")
+        target_text = f" on {selected.card.name}" if selected is not None else ""
+        self.events.append(f"Player {owner} played {card.name}{target_text}")
         self._cleanup()
         return instance_id
 
@@ -305,7 +306,10 @@ class Game:
                 if "lifesteal" in unit.keywords:
                     player = self.players[unit.owner]
                     player.health = min(25, player.health + damage)
-        self.events.append(f"{attacker.card.name} attacked")
+        target_text = f"Player {1 - owner}" if defender is None else defender.card.name
+        self.events.append(
+            f"Player {owner}'s {attacker.card.name} attacked {target_text} for {attack_damage} damage"
+        )
         self._cleanup()
 
     def end_turn(self, owner: int) -> None:

@@ -1,4 +1,4 @@
-"""Validate the catalog or run a small, legal terrain/status demonstration."""
+"""Play Heroes of Azelia in your browser, or validate its rules and assets."""
 
 import argparse
 
@@ -35,7 +35,12 @@ def demo(catalog: Catalog) -> Game:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--demo", action="store_true", help="demonstrate terrain-dependent buffs")
+    parser.add_argument("--check", action="store_true", help="validate assets without starting the game")
+    parser.add_argument("--port", type=int, default=8765, help="local HTTP port (default: 8765)")
+    parser.add_argument("--no-browser", action="store_true", help="do not automatically open a browser")
     args = parser.parse_args()
+    if not 0 <= args.port <= 65535:
+        parser.error("--port must be between 0 and 65535")
     try:
         catalog = load_catalog()
     except AssetError as error:
@@ -49,6 +54,13 @@ def main() -> None:
     )
     if args.demo:
         demo(catalog)
+    elif not args.check:
+        from functions.server import serve
+
+        try:
+            serve(catalog, args.port, not args.no_browser)
+        except OSError as error:
+            parser.exit(2, f"Could not start the local game: {error}. Try another --port.\n")
 
 
 if __name__ == "__main__":

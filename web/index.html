@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c1b">
+  <title>Heroes of Azelia</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Heroes of Azelia home"><span class="brand-mark">A</span><span>HEROES <small>OF</small> AZELIA<em>A duel of wild domains</em></span></a>
+    <div class="top-actions">
+      <span class="local-label"><i></i> LOCAL TABLE</span>
+      <button id="rules-button" class="quiet">How to play</button>
+      <button id="new-button" class="outline">New duel</button>
+    </div>
+  </header>
+  <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+  <main>
+    <section id="welcome" class="welcome">
+      <p class="eyebrow">LAND. SEA. SKY.</p>
+      <h1>The wilds await<br>your command.</h1>
+      <p>Raise a living army. Shape the battlefield.<br>Turn the tide with a well-timed enchantment.</p>
+      <button id="welcome-start" class="gold">Enter the arena</button>
+      <p class="muted small">Single-player AI &middot; Local two-player &middot; Six starter decks</p>
+    </section>
+    <div id="table" class="table-layout" hidden>
+      <section class="arena" aria-label="Battlefield">
+        <div id="opponent-summary"></div>
+        <div class="terrain-strip" id="opponent-terrains" aria-label="Opponent terrains"></div>
+        <section class="battle-row enemy-row" aria-label="Opponent creatures"><div id="opponent-board" class="creature-row"></div></section>
+        <div class="turn-divider">
+          <div><span class="eyebrow" id="turn-number"></span><strong id="turn-status"></strong></div>
+          <span id="target-prompt" class="target-prompt">Select a card to inspect it.</span>
+          <button id="end-turn" class="gold">End turn <span aria-hidden="true">&rarr;</span></button>
+        </div>
+        <section class="battle-row ally-row" aria-label="Your creatures"><div id="player-board" class="creature-row"></div></section>
+        <div class="terrain-strip" id="player-terrains" aria-label="Your terrains"></div>
+        <div id="player-summary"></div>
+        <section class="hand-section" aria-label="Your hand">
+          <div class="section-heading"><span class="eyebrow">YOUR HAND <span id="hand-count"></span></span><span class="muted small">Select a card, then play or choose a highlighted target.</span></div>
+          <button id="quick-action" class="gold wide" hidden>Play selected card</button>
+          <div id="hand" class="hand"></div>
+        </section>
+      </section>
+      <aside class="sidebar">
+        <section id="inspector" class="inspector" aria-label="Card details"></section>
+        <section class="chronicle">
+          <div class="section-heading"><h2>Chronicle</h2><button id="refresh-button" class="text-button">Refresh table</button></div>
+          <ol id="event-log" aria-live="polite" aria-relevant="additions"></ol>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <footer>HEROES OF AZELIA <span>Original worlds. Endless possibilities.</span></footer>
+
+  <dialog id="setup-dialog" class="setup-dialog" aria-labelledby="setup-title">
+    <form id="setup-form">
+      <div class="dialog-heading"><div><p class="eyebrow">CHOOSE YOUR ALLEGIANCE</p><h2 id="setup-title">A new duel</h2></div><button type="button" class="icon-button" data-close="setup-dialog" aria-label="Close deck selection">&times;</button></div>
+      <p class="muted">Forty cards. Three domains. One victor.</p>
+      <label class="mode-label">Play mode<select id="mode"><option value="ai">Against the AI</option><option value="hotseat">Two-player hotseat</option></select></label>
+      <div class="deck-pickers">
+        <section><label for="first-deck">Your deck <span class="muted">(Player 1)</span></label><select id="first-deck"></select><div id="first-preview" class="deck-preview"></div></section>
+        <section><label for="second-deck" id="second-label">Opponent's deck</label><select id="second-deck"></select><div id="second-preview" class="deck-preview"></div></section>
+      </div>
+      <p class="small muted">Both players open with two free terrains and three early creatures. Player 1 goes first. Hotseat keeps hands hidden behind a pass-screen prompt.</p>
+      <button class="gold wide" type="submit" id="start-button">Begin duel</button>
+    </form>
+  </dialog>
+
+  <dialog id="handoff-dialog" class="handoff-dialog" aria-labelledby="handoff-title">
+    <p class="eyebrow">PASS THE SCREEN</p><div class="handoff-symbol" aria-hidden="true">&#9671;</div>
+    <h2 id="handoff-title">Your turn awaits</h2>
+    <p id="handoff-description" class="muted"></p>
+    <button id="ready-button" class="gold">I'm ready &mdash; reveal my hand</button>
+    <button id="handoff-new" class="text-button">Start a different duel</button>
+  </dialog>
+
+  <dialog id="result-dialog" class="result-dialog" aria-labelledby="result-title">
+    <p class="eyebrow">THE DUEL IS DECIDED</p><h2 id="result-title">Victory</h2>
+    <p id="result-description" class="muted"></p>
+    <button id="rematch-button" class="gold">Play again</button>
+    <button class="quiet" data-close="result-dialog">Inspect the battlefield</button>
+  </dialog>
+
+  <dialog id="rules-dialog" class="rules-dialog" aria-labelledby="rules-title">
+    <div class="dialog-heading"><div><p class="eyebrow">A FIELD GUIDE</p><h2 id="rules-title">How to play</h2></div><button class="icon-button" data-close="rules-dialog" aria-label="Close rules">&times;</button></div>
+    <p>Reduce your opponent from <strong>25 health to zero</strong>. Select cards in your hand to read them; playable cards have a glowing border.</p>
+    <div class="rules-grid">
+      <section><h3>01 / Grow your domain</h3><p>Play one terrain each turn. Each provides one mana per turn. Its play cost is its value minus one. Multi-domain terrain provides its types immediately, but no mana on the turn it enters.</p></section>
+      <section><h3>02 / Build your army</h3><p>Pay the shown mana cost and control all required domains. Creatures usually wait until your next turn to attack. Haste lets them attack immediately. You may control eight creatures.</p></section>
+      <section><h3>03 / Choose your battles</h3><p>Select one of your creatures, then a highlighted enemy or the opponent's portrait. Attacks deal simultaneous retaliation damage. Reachable Guards must be attacked first. Each creature attacks once per turn.</p></section>
+      <section><h3>04 / Turn the tide</h3><p>Spells resolve once. Enchants attach lasting buffs or debuffs to a creature. Select a targeted card, then click a highlighted creature. Inspect creatures to see durations and attached enchants.</p></section>
+    </div>
+    <details open><summary>Domains and counterplay</summary><p>Flying defenders require Flying attackers. Water Breathing defenders require Water Breathing attackers. Ward prevents selected enemy spells and enchants, not combat or area effects. Grounded suppresses Flying; water effects extinguish Burning; Regeneration counters Poisoned.</p><p><strong>Losing your last sea terrain permanently removes Water Breathing.</strong> Restoring sea does not restore the buff; apply it again. The same applies to other terrain-dependent statuses.</p></details>
+    <details><summary>Timing, healing, and enchantments</summary><p>Timed statuses count down at the affected player's turn end. Enchants override those durations and last until removed or countered. Identical statuses replace rather than stack. Damage persists; healing cannot exceed maximum health. Losing bonus health can kill a damaged creature. Empty decks cause one fatigue damage per attempted draw.</p></details>
+    <details><summary>Local table and controls</summary><p>Click a card to inspect it, then use its action or choose a highlighted target. Cancel selection with Escape. The inspector lets you sacrifice your own terrain or dismiss an enchant you control. Those choices can remove buffs and kill creatures. Click a graveyard count to inspect used cards.</p><p>This is one local table shared by browser tabs. Refreshing reconnects to the current duel; closing or restarting the Python server clears it. Hotseat is for players sharing one screen, not secure remote multiplayer. AI uses the public board, not your hidden hand.</p></details>
+  </dialog>
+
+  <dialog id="graveyard-dialog" class="rules-dialog" aria-labelledby="graveyard-title">
+    <div class="dialog-heading"><h2 id="graveyard-title">Graveyard</h2><button class="icon-button" data-close="graveyard-dialog" aria-label="Close graveyard">&times;</button></div>
+    <div id="graveyard-cards" class="graveyard-cards"></div>
+  </dialog>
+  <div id="busy-overlay" class="busy-overlay" role="status" hidden><span class="spinner"></span><span id="busy-text">Resolving the battlefield...</span></div>
+  <div id="action-banner" class="action-banner" role="status" aria-live="polite" hidden></div>
+  <div id="animation-layer" class="animation-layer" aria-hidden="true"></div>
+</body>
+</html>

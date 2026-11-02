@@ -1,20 +1,93 @@
 # Heroes of Azelia
 
-An original fantasy card-game foundation inspired by resource development,
-creature combat, and interacting enchantments. Python 3.10+; no external
-dependencies are required.
+An original fantasy card game inspired by resource development, creature combat,
+and interacting enchantments. Play against the AI or share a screen in two-player
+hotseat. Python 3.10+ and a modern browser; no external dependencies, accounts,
+or internet connection are required.
 
 ## Run
 
 ```sh
 python3 main.py
+```
+
+This opens the game at **http://127.0.0.1:8765**. Choose a mode and two starter
+decks, then begin your duel. Press Ctrl+C in the terminal to stop the server.
+
+```sh
+python3 main.py --no-browser --port 8766
+python3 main.py --check
 python3 main.py --demo
 python3 -m unittest discover -s tests -v
 ```
 
+Use another `--port` if the default is occupied. `--check` validates the catalog
+without opening a server. Launching from outside this directory also works when
+you give the absolute path to `main.py`.
+
 The demo plays legal turns to show Water Breathing being granted, removed on
 losing the final sea terrain, remaining absent when sea returns, and being
-explicitly reapplied. This is a headless rules layer, not a graphical game or AI.
+explicitly reapplied.
+
+## Playing in the browser
+
+- Select a hand card to inspect its abilities. Glowing cards have a legal play.
+  Click **Play** in the inspector, or choose a highlighted creature if the card
+  needs a target. Narrow screens also have a quick-action button above the hand.
+- Select your creature to highlight legal attack targets. Click an enemy
+  creature or the opponent's portrait to attack. The small **i** button inspects
+  a creature without accidentally targeting it.
+- The inspector shows current stats, keywords, timed statuses, and enchants.
+  It also lets you dismiss your own enchants or sacrifice your own terrains,
+  with confirmation. Graveyard counts open a card list.
+- End your turn to resolve statuses and let the AI act. In hotseat, pass the
+  screen before revealing the next hand. The server withholds both hands until
+  that player presses **I'm ready**.
+- Played cards visibly travel from your hand (or the opponent's side), pause
+  face-up so you can read them, then land on their creature, terrain, or spell
+  target. AI moves replay one at a time with an action banner; attacks lunge
+  toward their target and changed stats/statuses flash. Controls stay locked
+  until the sequence finishes, and the victory screen appears afterward.
+  Reduced-motion preferences replace movement with a brief face-up reveal.
+  Refresh reconnects to the final authoritative board without replaying old moves.
+- **How to play** opens the rules. Escape cancels a card selection. **New duel**
+  and the victory screen let you restart with different decks.
+- Reloading the page reconnects to the current match. **Refresh table** recovers
+  from a stale browser tab or interrupted connection without replaying a move.
+
+### Six starter decks
+
+| Starter | Domains | Approach |
+|---|---|---|
+| Wildwood Covenant | Land | Guardians, regeneration, armor, and a board-wide rally |
+| Court of the Deep | Sea | Water Breathing, healing, and late-game leviathans |
+| Skybound Accord | Air | Flying attackers, haste, wards, and grounding magic |
+| Marshlight Circle | Land + Sea | Coastal creatures, poison, and cleansing |
+| Thunderpeak Legion | Land + Air | Chargers, large guards, and flying lifesteal |
+| Tempest Voyage | Sea + Air | Evasion, soaking curses, and storm effects |
+
+Each starter has 40 cards and 16 terrains. Both players get a shared assisted
+opening rule: two free terrains covering their deck's domains, and three
+supported creatures costing at most three mana (at least one costs at most two).
+The remaining deck is shuffled. Water starters use free multi-domain coastal
+terrains, which enter exhausted; they trade early speed for flexibility.
+
+The AI simulates legal moves and evaluates the public board, healing,
+terrain development, creature survival, and lethal attacks. It cannot inspect
+your hand or deck order when making decisions. It is a beginner-friendly
+one-ply opponent, not a competitive search engine.
+
+### Local table boundaries
+
+This is **one local table** per Python process, shared by browser tabs. Revision
+checks reject duplicate/stale moves. AI turns resolve on the server before their
+individual public snapshots animate in the browser; snapshots never reveal the
+AI hand or its legal moves. Hotseat is a shared-screen privacy feature, not authenticated
+remote multiplayer. The server only binds to loopback and accepts same-origin
+requests; do not expose it through a public proxy.
+
+Matches are in memory: restarting the server loses progress. There is no custom
+deck builder, online matchmaking, save system, or account system.
 
 ## Collection
 
@@ -28,6 +101,9 @@ explicitly reapplied. This is a headless rules layer, not a graphical game or AI
 - Descriptions explain abilities; structured fields, not prose, drive gameplay.
   Invalid data and broken references raise `AssetError`, illegal moves raise
   `RuleError`, and `game.events` records resolved actions and terrain-based loss.
+- `classes/game.py` is the authoritative engine. `classes/match.py` supplies
+  starter decks, legal-move discovery, AI, and hand-safe browser snapshots.
+  `functions/server.py` serves the local API and the dependency-free `web/` UI.
 
 ## Core rules
 
