@@ -1,8 +1,8 @@
 {
     "name": "Ashen Caldera",
-    "description": "A ring of black cliffs surrounds the glowing heart of a sleeping volcano.",
+    "description": "Black cliffs surround a glowing volcano. On play, inflict Burning on all current enemy creatures for three of their turns.",
     "rarity": "rare",
-    "onPlay": null,
+    "onPlay": [{"action": "apply", "target": "all_enemies", "status": "burning"}],
     "onDraw": null,
     "value": 3,
     "terrainType": ["land"]

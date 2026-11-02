@@ -1,0 +1,5 @@
+{
+    "name": "Evergreen Pact", "description": "Enchant an ally with Regeneration. It heals 1 at each of its controller's turn ends and loses Poisoned.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "ally", "status": "regeneration"}]
+}

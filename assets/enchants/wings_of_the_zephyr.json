@@ -1,0 +1,5 @@
+{
+    "name": "Wings of the Zephyr", "description": "Enchant an ally with Soaring. Flying lasts while this enchant and your air terrain remain.",
+    "rarity": "uncommon", "cost": 2, "requiresTerrain": ["air"],
+    "onPlay": [{"action": "apply", "target": "ally", "status": "soaring"}]
+}

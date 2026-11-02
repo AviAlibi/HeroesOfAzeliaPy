@@ -1,0 +1,6 @@
+{
+    "name": "Moonpool Jellyfish", "type": "creature", "description": "On play, gains Regeneration for three of its controller's turns.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["sea"],
+    "attack": 1, "health": 3, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "regeneration"}]
+}

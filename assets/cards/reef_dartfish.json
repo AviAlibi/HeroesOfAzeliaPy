@@ -1,0 +1,6 @@
+{
+    "name": "Reef Dartfish", "type": "creature", "description": "On play, gains Water Breathing while its controller keeps a sea terrain.",
+    "rarity": "common", "cost": 1, "requiresTerrain": ["sea"],
+    "attack": 1, "health": 1, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "water_breathing"}]
+}

@@ -1,8 +1,8 @@
 {
     "name": "Farwatch Summit",
-    "description": "From this wind-scoured summit, distant ships and storms are visible for miles.",
+    "description": "Ships are visible for miles. On play, remove Grounded from all current friendly creatures. Enters exhausted.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [{"action": "remove", "target": "all_allies", "status": "grounded"}],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land", "air"]

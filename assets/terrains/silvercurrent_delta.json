@@ -1,8 +1,11 @@
 {
     "name": "Silvercurrent Delta",
-    "description": "Braided rivers spread through bright reeds before meeting the open sea.",
+    "description": "Braided rivers spread through bright reeds. On play, remove Poisoned and Burning from all current friendly creatures. Enters exhausted.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "remove", "target": "all_allies", "status": "poisoned"},
+        {"action": "remove", "target": "all_allies", "status": "burning"}
+    ],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land", "sea"]

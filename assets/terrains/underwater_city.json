@@ -1,8 +1,11 @@
 {
     "name": "Underwater City",
-    "description": "Pearl-lit avenues wind through a city built beneath the ocean's surface.",
+    "description": "Pearl-lit avenues shelter the deep. On play, grant Water Breathing and Tidal Vigor to all current friendly creatures while sea terrain remains.",
     "rarity": "epic",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "apply", "target": "all_allies", "status": "water_breathing"},
+        {"action": "apply", "target": "all_allies", "status": "tidal_vigor"}
+    ],
     "onDraw": null,
     "value": 4,
     "terrainType": ["sea"]

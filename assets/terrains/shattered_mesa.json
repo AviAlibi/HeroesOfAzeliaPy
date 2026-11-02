@@ -1,8 +1,8 @@
 {
     "name": "Shattered Mesa",
-    "description": "Broken stone columns rise from the desert like the ruins of a giant's hall.",
+    "description": "Broken columns rise from the desert. On play, remove Battle Fervor from all current enemy creatures.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [{"action": "remove", "target": "all_enemies", "status": "battle_fervor"}],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land"]

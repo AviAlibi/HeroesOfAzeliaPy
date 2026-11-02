@@ -1,8 +1,8 @@
 {
     "name": "Gloaming Fen",
-    "description": "Blue marsh lights drift above pools too deep to measure.",
+    "description": "Blue lights drift above bottomless pools. On play, inflict Soaked on all current enemy creatures. Enters exhausted.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [{"action": "apply", "target": "all_enemies", "status": "soaked"}],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land", "sea"]

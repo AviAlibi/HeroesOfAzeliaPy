@@ -1,0 +1,9 @@
+{
+    "name": "Woodland Vigor",
+    "description": "Grants +1 attack and +1 maximum health for two of the controller's turns while land terrain is controlled. Removes Frail.",
+    "duration": 2,
+    "requiresTerrain": ["land"],
+    "attack": 1,
+    "health": 1,
+    "removes": ["frail"]
+}

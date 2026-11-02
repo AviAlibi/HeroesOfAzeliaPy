@@ -1,0 +1,5 @@
+{
+    "name": "Cinder Beetle", "type": "creature", "description": "A brittle ember-armored scavenger that threatens larger prey.",
+    "rarity": "common", "cost": 1, "requiresTerrain": ["land"],
+    "attack": 2, "health": 1, "keywords": [], "onPlay": []
+}

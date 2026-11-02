@@ -1,0 +1,6 @@
+{
+    "name": "Tidal Serpent", "type": "creature", "description": "On play, gains Water Breathing. Its hunting grounds vanish if the sea terrain is lost.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["sea"],
+    "attack": 3, "health": 2, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "water_breathing"}]
+}

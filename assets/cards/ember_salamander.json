@@ -1,0 +1,6 @@
+{
+    "name": "Ember Salamander", "type": "creature", "description": "On play, gains Battle Fervor: +2 attack for two of its controller's turns.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["land"],
+    "attack": 3, "health": 2, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "battle_fervor"}]
+}

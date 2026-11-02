@@ -1,0 +1,5 @@
+{
+    "name": "Windroot Treant", "type": "creature", "description": "Requires land and air. Guard. Anchors floating groves with its vast roots.",
+    "rarity": "rare", "cost": 5, "requiresTerrain": ["land", "air"],
+    "attack": 4, "health": 6, "keywords": ["guard"], "onPlay": []
+}

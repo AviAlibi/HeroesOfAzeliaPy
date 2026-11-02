@@ -1,0 +1,11 @@
+{
+    "name": "Purifying Light", "type": "spell", "description": "Remove Cursed, Poisoned, Burning, Frostbite, and Weakened from a friendly creature.",
+    "rarity": "uncommon", "cost": 2, "requiresTerrain": ["land"],
+    "onPlay": [
+        {"action": "remove", "target": "ally", "status": "cursed"},
+        {"action": "remove", "target": "ally", "status": "poisoned"},
+        {"action": "remove", "target": "ally", "status": "burning"},
+        {"action": "remove", "target": "ally", "status": "frostbite"},
+        {"action": "remove", "target": "ally", "status": "weakened"}
+    ]
+}

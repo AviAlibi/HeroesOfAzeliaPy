@@ -1,0 +1,6 @@
+{
+    "name": "Delta Herbalist", "type": "creature", "description": "Requires land and sea. On play, removes Poisoned from every friendly creature.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["land", "sea"],
+    "attack": 2, "health": 4, "keywords": [],
+    "onPlay": [{"action": "remove", "target": "all_allies", "status": "poisoned"}]
+}

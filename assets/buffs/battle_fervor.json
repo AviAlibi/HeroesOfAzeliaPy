@@ -1,0 +1,7 @@
+{
+    "name": "Battle Fervor",
+    "description": "Grants +2 attack for two of the controller's turns. Removes Weakened and Disarmed.",
+    "duration": 2,
+    "attack": 2,
+    "removes": ["weakened", "disarmed"]
+}

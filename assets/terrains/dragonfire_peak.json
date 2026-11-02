@@ -1,8 +1,11 @@
 {
     "name": "Dragonfire Peak",
-    "description": "A smoldering summit bears the unmistakable mark of a dragon's lair.",
+    "description": "A dragon rules this smoldering summit. On play, deal 2 damage and inflict Burning on all current enemy creatures.",
     "rarity": "mythical",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "damage", "target": "all_enemies", "amount": 2},
+        {"action": "apply", "target": "all_enemies", "status": "burning"}
+    ],
     "onDraw": null,
     "value": 5,
     "terrainType": ["land"]

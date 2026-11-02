@@ -1,0 +1,5 @@
+{
+    "name": "Shellback Crab", "type": "creature", "description": "Guard. A low-cost coastal defender protected by a thick shell.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["sea"],
+    "attack": 1, "health": 4, "keywords": ["guard"], "onPlay": []
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Rune-Antler Sage", "type": "creature", "description": "On play, removes Cursed from every friendly creature.",
+    "rarity": "rare", "cost": 4, "requiresTerrain": ["land"],
+    "attack": 2, "health": 5, "keywords": [],
+    "onPlay": [{"action": "remove", "target": "all_allies", "status": "cursed"}]
+}

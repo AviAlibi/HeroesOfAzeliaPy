@@ -1,0 +1,5 @@
+{
+    "name": "Thunderhoof Charger", "type": "creature", "description": "Requires land and air. Haste. Races across highland paths with thunder at its heels.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["land", "air"],
+    "attack": 4, "health": 3, "keywords": ["haste"], "onPlay": []
+}

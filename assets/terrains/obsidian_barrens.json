@@ -1,8 +1,11 @@
 {
     "name": "Obsidian Barrens",
-    "description": "Dark volcanic plains stretch beneath a sky veiled in ash.",
+    "description": "Volcanic plains lie beneath veils of ash. On play, remove Soaked and Frostbite from all current friendly creatures.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "remove", "target": "all_allies", "status": "soaked"},
+        {"action": "remove", "target": "all_allies", "status": "frostbite"}
+    ],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land"]

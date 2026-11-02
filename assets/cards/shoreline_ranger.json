@@ -1,0 +1,5 @@
+{
+    "name": "Shoreline Ranger", "type": "creature", "description": "Requires both land and sea terrain. A dependable scout of the border coast.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["land", "sea"],
+    "attack": 2, "health": 3, "keywords": [], "onPlay": []
+}

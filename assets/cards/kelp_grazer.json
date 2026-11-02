@@ -1,0 +1,5 @@
+{
+    "name": "Kelp Grazer", "type": "creature", "description": "A resilient inhabitant of the shallow kelp forests.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["sea"],
+    "attack": 2, "health": 3, "keywords": [], "onPlay": []
+}

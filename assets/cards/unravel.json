@@ -1,0 +1,5 @@
+{
+    "name": "Unravel", "type": "spell", "description": "Dispel every enchant attached to one creature, friendly or enemy. Ward prevents enemy targeting.",
+    "rarity": "common", "cost": 2, "requiresTerrain": [],
+    "onPlay": [{"action": "dispel", "target": "any"}]
+}

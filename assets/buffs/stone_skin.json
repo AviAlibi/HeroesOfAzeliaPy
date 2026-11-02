@@ -1,0 +1,7 @@
+{
+    "name": "Stone Skin",
+    "description": "Grants +2 maximum health for three of the controller's turns. Removes Frail and Exposed; does not heal existing damage.",
+    "duration": 3,
+    "health": 2,
+    "removes": ["frail", "exposed"]
+}

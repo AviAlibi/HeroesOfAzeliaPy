@@ -1,0 +1,5 @@
+{
+    "name": "Venom Dart", "type": "spell", "description": "Inflict Poisoned on an enemy creature, removing Regeneration.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "poisoned"}]
+}

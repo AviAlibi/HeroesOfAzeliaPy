@@ -1,0 +1,6 @@
+{
+    "name": "Oakroot Tender", "type": "creature", "description": "On play, heals 1 damage from every friendly creature, including itself.",
+    "rarity": "common", "cost": 3, "requiresTerrain": ["land"],
+    "attack": 1, "health": 4, "keywords": [],
+    "onPlay": [{"action": "heal", "target": "all_allies", "amount": 1}]
+}

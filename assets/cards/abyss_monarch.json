@@ -1,0 +1,6 @@
+{
+    "name": "Abyss Monarch", "type": "creature", "description": "On play, grants Tidal Vigor to every friendly creature while sea terrain remains.",
+    "rarity": "epic", "cost": 6, "requiresTerrain": ["sea"],
+    "attack": 5, "health": 5, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "all_allies", "status": "tidal_vigor"}]
+}

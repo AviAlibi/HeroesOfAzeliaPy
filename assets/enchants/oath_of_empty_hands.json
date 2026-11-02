@@ -1,0 +1,5 @@
+{
+    "name": "Oath of Empty Hands", "description": "Enchant an enemy with Disarmed, setting attack and retaliation damage to zero and removing Battle Fervor.",
+    "rarity": "rare", "cost": 4, "requiresTerrain": ["air"],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "disarmed"}]
+}

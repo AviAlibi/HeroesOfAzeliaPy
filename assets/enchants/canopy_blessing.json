@@ -1,0 +1,5 @@
+{
+    "name": "Canopy Blessing", "description": "Enchant an ally with Woodland Vigor. Grants +1 attack and +1 maximum health while you control land terrain.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "ally", "status": "woodland_vigor"}]
+}

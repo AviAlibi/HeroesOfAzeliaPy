@@ -1,0 +1,8 @@
+{
+    "name": "Quenching Tide", "type": "spell", "description": "Remove Burning and Poisoned from a friendly creature.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["sea"],
+    "onPlay": [
+        {"action": "remove", "target": "ally", "status": "burning"},
+        {"action": "remove", "target": "ally", "status": "poisoned"}
+    ]
+}

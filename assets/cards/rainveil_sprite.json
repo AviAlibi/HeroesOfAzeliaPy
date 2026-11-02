@@ -1,0 +1,6 @@
+{
+    "name": "Rainveil Sprite", "type": "creature", "description": "Requires sea and air. Flying. On play, removes Burning from every friendly creature.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["sea", "air"],
+    "attack": 2, "health": 2, "keywords": ["flying"],
+    "onPlay": [{"action": "remove", "target": "all_allies", "status": "burning"}]
+}

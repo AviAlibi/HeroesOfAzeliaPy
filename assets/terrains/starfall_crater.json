@@ -1,8 +1,8 @@
 {
     "name": "Starfall Crater",
-    "description": "A fallen star left a glassy basin that glows after sunset.",
+    "description": "A fallen star lights the glassy basin. On play, deal 3 damage to all current enemy creatures.",
     "rarity": "mythical",
-    "onPlay": null,
+    "onPlay": [{"action": "damage", "target": "all_enemies", "amount": 3}],
     "onDraw": null,
     "value": 5,
     "terrainType": ["land"]

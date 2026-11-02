@@ -1,0 +1,7 @@
+{
+    "name": "Rooted",
+    "description": "Prevents attacks for two of the controller's turns. Removes Swiftness.",
+    "duration": 2,
+    "keywords": ["cant_attack"],
+    "removes": ["swiftness"]
+}

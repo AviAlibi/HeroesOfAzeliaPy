@@ -1,8 +1,8 @@
 {
     "name": "Glass Desert",
-    "description": "The dunes have melted into a glittering sea of sharp, translucent sand.",
+    "description": "Melted dunes glitter with sharp glass. On play, inflict Exposed on all current enemy creatures for two of their turns.",
     "rarity": "rare",
-    "onPlay": null,
+    "onPlay": [{"action": "apply", "target": "all_enemies", "status": "exposed"}],
     "onDraw": null,
     "value": 3,
     "terrainType": ["land"]

@@ -1,0 +1,5 @@
+{
+    "name": "Lead Feathers", "description": "Enchant an enemy with Grounded, suppressing Flying and removing Soaring and Windborne Focus.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["air"],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "grounded"}]
+}

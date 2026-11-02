@@ -1,0 +1,5 @@
+{
+    "name": "Ridge Ram", "type": "creature", "description": "A fearless cliff runner with a crushing charge but little protection.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["land"],
+    "attack": 3, "health": 1, "keywords": [], "onPlay": []
+}

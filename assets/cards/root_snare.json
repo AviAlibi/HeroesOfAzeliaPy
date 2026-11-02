@@ -1,0 +1,5 @@
+{
+    "name": "Root Snare", "type": "spell", "description": "Inflict Rooted on an enemy creature, preventing attacks for two of its turns.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "rooted"}]
+}

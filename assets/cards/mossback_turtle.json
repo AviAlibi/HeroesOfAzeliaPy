@@ -1,0 +1,5 @@
+{
+    "name": "Mossback Turtle", "type": "creature", "description": "Guard. A patient defender carrying a miniature forest on its shell.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["land"],
+    "attack": 1, "health": 4, "keywords": ["guard"], "onPlay": []
+}

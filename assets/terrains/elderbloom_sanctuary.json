@@ -1,8 +1,12 @@
 {
     "name": "Elderbloom Sanctuary",
-    "description": "A garden of enormous flowers surrounds a grove untouched by war.",
+    "description": "Enormous flowers shelter a peaceful grove. On play, remove Cursed, grant Regeneration, and heal 2 damage from all current friendly creatures.",
     "rarity": "mythical",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "remove", "target": "all_allies", "status": "cursed"},
+        {"action": "apply", "target": "all_allies", "status": "regeneration"},
+        {"action": "heal", "target": "all_allies", "amount": 2}
+    ],
     "onDraw": null,
     "value": 5,
     "terrainType": ["land"]

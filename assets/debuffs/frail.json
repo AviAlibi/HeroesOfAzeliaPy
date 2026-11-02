@@ -1,0 +1,7 @@
+{
+    "name": "Frail",
+    "description": "Reduces maximum health by 1 for two of the controller's turns. Removes Stone Skin and Woodland Vigor; can cause immediate death.",
+    "duration": 2,
+    "health": -1,
+    "removes": ["stone_skin", "woodland_vigor"]
+}

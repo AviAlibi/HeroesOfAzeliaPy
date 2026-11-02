@@ -1,0 +1,5 @@
+{
+    "name": "Gale Duelist", "type": "creature", "description": "A wind-trained swordsman who trades protection for an aggressive fighting style.",
+    "rarity": "common", "cost": 3, "requiresTerrain": ["air"],
+    "attack": 4, "health": 2, "keywords": [], "onPlay": []
+}

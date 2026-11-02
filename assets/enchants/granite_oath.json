@@ -1,0 +1,5 @@
+{
+    "name": "Granite Oath", "description": "Enchant an ally with Stone Skin, granting +2 maximum health and removing Frail and Exposed.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "ally", "status": "stone_skin"}]
+}

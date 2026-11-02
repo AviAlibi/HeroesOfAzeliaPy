@@ -1,8 +1,11 @@
 {
     "name": "Nightglass Expanse",
-    "description": "A dark, reflective plain mirrors the stars with uncanny clarity.",
+    "description": "A dark plain mirrors the stars. On play, inflict Cursed and Frail on all current enemy creatures.",
     "rarity": "epic",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "apply", "target": "all_enemies", "status": "cursed"},
+        {"action": "apply", "target": "all_enemies", "status": "frail"}
+    ],
     "onDraw": null,
     "value": 4,
     "terrainType": ["land"]

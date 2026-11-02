@@ -1,8 +1,8 @@
 {
     "name": "Emberfall Ridge",
-    "description": "Streams of molten stone descend a ridge stained red by the forge below.",
+    "description": "Molten stone flows down the ridge. On play, grant Battle Fervor to all current friendly creatures for two of their turns.",
     "rarity": "rare",
-    "onPlay": null,
+    "onPlay": [{"action": "apply", "target": "all_allies", "status": "battle_fervor"}],
     "onDraw": null,
     "value": 3,
     "terrainType": ["land"]

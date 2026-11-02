@@ -1,8 +1,11 @@
 {
     "name": "Cloudbreak Citadel",
-    "description": "A fortress perched above the clouds keeps watch over the far horizon.",
+    "description": "A fortress watches the horizon. On play, grant Guardian and Windborne Focus to all current friendly creatures.",
     "rarity": "epic",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "apply", "target": "all_allies", "status": "guardian"},
+        {"action": "apply", "target": "all_allies", "status": "windborne_focus"}
+    ],
     "onDraw": null,
     "value": 4,
     "terrainType": ["air"]

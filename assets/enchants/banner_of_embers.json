@@ -1,0 +1,5 @@
+{
+    "name": "Banner of Embers", "description": "Enchant an ally with Battle Fervor, granting +2 attack and removing Weakened and Disarmed.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "ally", "status": "battle_fervor"}]
+}

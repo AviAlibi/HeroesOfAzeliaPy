@@ -1,0 +1,8 @@
+{
+    "name": "Grounding Bolt", "type": "spell", "description": "Deal 1 damage and inflict Grounded on an enemy creature for two of its turns.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["air"],
+    "onPlay": [
+        {"action": "damage", "target": "enemy", "amount": 1},
+        {"action": "apply", "target": "enemy", "status": "grounded"}
+    ]
+}

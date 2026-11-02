@@ -1,0 +1,7 @@
+{
+    "name": "Exposed",
+    "description": "Reduces maximum health by 2 for two of the controller's turns. Removes Stone Skin; can cause immediate death.",
+    "duration": 2,
+    "health": -2,
+    "removes": ["stone_skin"]
+}

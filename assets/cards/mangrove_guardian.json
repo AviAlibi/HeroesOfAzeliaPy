@@ -1,0 +1,5 @@
+{
+    "name": "Mangrove Guardian", "type": "creature", "description": "Requires land and sea. Guard. Its roots form a living coastal wall.",
+    "rarity": "rare", "cost": 5, "requiresTerrain": ["land", "sea"],
+    "attack": 3, "health": 7, "keywords": ["guard"], "onPlay": []
+}

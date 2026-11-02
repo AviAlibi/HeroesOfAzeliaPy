@@ -1,8 +1,8 @@
 {
     "name": "Hollowroot Cavern",
-    "description": "Roots from an ancient tree thread through a cavern rich with crystal.",
+    "description": "Ancient roots thread through crystal caves. On play, grant Stone Skin to all current friendly creatures for three of their turns.",
     "rarity": "rare",
-    "onPlay": null,
+    "onPlay": [{"action": "apply", "target": "all_allies", "status": "stone_skin"}],
     "onDraw": null,
     "value": 3,
     "terrainType": ["land"]

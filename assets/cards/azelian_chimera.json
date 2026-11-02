@@ -1,0 +1,5 @@
+{
+    "name": "Azelian Chimera", "type": "creature", "description": "Requires land, sea, and air. Flying. A rare union of Azelia's three wild domains.",
+    "rarity": "epic", "cost": 6, "requiresTerrain": ["land", "sea", "air"],
+    "attack": 5, "health": 6, "keywords": ["flying"], "onPlay": []
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Sapphire Ray", "type": "creature", "description": "On play, gains Tidal Vigor: +1 attack and +1 maximum health for three of its turns while sea remains.",
+    "rarity": "rare", "cost": 4, "requiresTerrain": ["sea"],
+    "attack": 3, "health": 4, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "tidal_vigor"}]
+}

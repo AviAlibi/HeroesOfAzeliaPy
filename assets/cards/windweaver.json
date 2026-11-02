@@ -1,0 +1,6 @@
+{
+    "name": "Windweaver", "type": "creature", "description": "On play, gains Spellward for two of its controller's turns.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["air"],
+    "attack": 2, "health": 4, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "spellward"}]
+}

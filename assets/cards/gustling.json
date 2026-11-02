@@ -1,0 +1,5 @@
+{
+    "name": "Gustling", "type": "creature", "description": "A playful knot of wind with surprising resilience and no natural Flying.",
+    "rarity": "common", "cost": 1, "requiresTerrain": ["air"],
+    "attack": 1, "health": 2, "keywords": [], "onPlay": []
+}

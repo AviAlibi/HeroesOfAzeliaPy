@@ -1,0 +1,5 @@
+{
+    "name": "Hollow Benediction", "description": "Enchant an enemy with Cursed, preventing it from healing damage and removing Regeneration.",
+    "rarity": "common", "cost": 2, "requiresTerrain": [],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "cursed"}]
+}

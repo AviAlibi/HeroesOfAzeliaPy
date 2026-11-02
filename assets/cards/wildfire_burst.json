@@ -1,0 +1,8 @@
+{
+    "name": "Wildfire Burst", "type": "spell", "description": "Deal 3 damage to an enemy creature and inflict Burning for three of its turns.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["land"],
+    "onPlay": [
+        {"action": "damage", "target": "enemy", "amount": 3},
+        {"action": "apply", "target": "enemy", "status": "burning"}
+    ]
+}

@@ -1,0 +1,5 @@
+{
+    "name": "Cloud Sentinel", "type": "creature", "description": "Flying and Guard. Shields the sky lanes from winged intruders.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["air"],
+    "attack": 2, "health": 5, "keywords": ["flying", "guard"], "onPlay": []
+}

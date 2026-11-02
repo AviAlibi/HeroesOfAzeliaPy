@@ -1,0 +1,8 @@
+{
+    "name": "Frostbite",
+    "description": "Reduces attack by 1 and deals 1 damage at the end of each of the controller's next two turns. Extinguishes Burning.",
+    "duration": 2,
+    "attack": -1,
+    "damagePerTurn": 1,
+    "removes": ["burning"]
+}

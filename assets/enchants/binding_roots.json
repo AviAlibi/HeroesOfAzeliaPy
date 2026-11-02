@@ -1,0 +1,5 @@
+{
+    "name": "Binding Roots", "description": "Enchant an enemy with Rooted. It cannot attack until the roots are removed; it may still retaliate.",
+    "rarity": "rare", "cost": 4, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "rooted"}]
+}

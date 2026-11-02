@@ -1,0 +1,5 @@
+{
+    "name": "Saltspire Duelist", "type": "creature", "description": "A precise, aggressive fighter trained in the narrow halls of the underwater city.",
+    "rarity": "common", "cost": 3, "requiresTerrain": ["sea"],
+    "attack": 4, "health": 2, "keywords": [], "onPlay": []
+}

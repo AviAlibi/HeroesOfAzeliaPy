@@ -1,0 +1,5 @@
+{
+    "name": "Undertow Shroud", "description": "Enchant an enemy with Soaked, reducing attack by 1 and extinguishing Burning.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["sea"],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "soaked"}]
+}

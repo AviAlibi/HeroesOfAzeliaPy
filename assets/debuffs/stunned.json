@@ -1,0 +1,7 @@
+{
+    "name": "Stunned",
+    "description": "Prevents attacks until the end of the controller's next turn. Removes Swiftness.",
+    "duration": 1,
+    "keywords": ["cant_attack"],
+    "removes": ["swiftness"]
+}

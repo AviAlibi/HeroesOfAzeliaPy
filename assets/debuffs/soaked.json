@@ -1,0 +1,7 @@
+{
+    "name": "Soaked",
+    "description": "Reduces attack by 1 for three of the controller's turns. Extinguishes Burning.",
+    "duration": 3,
+    "attack": -1,
+    "removes": ["burning"]
+}

@@ -1,0 +1,5 @@
+{
+    "name": "Cloudbreak Guardian", "type": "creature", "description": "Flying and Guard. A stalwart defender of the floating citadel.",
+    "rarity": "epic", "cost": 6, "requiresTerrain": ["air"],
+    "attack": 4, "health": 7, "keywords": ["flying", "guard"], "onPlay": []
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Dawn Herald", "type": "creature", "description": "Flying. On play, heals 1 damage from every friendly creature.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["air"],
+    "attack": 3, "health": 3, "keywords": ["flying"],
+    "onPlay": [{"action": "heal", "target": "all_allies", "amount": 1}]
+}

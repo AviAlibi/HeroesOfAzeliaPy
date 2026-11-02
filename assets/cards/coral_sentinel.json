@@ -1,0 +1,5 @@
+{
+    "name": "Coral Sentinel", "type": "creature", "description": "Guard. A living reef that shields the smaller denizens of the coast.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["sea"],
+    "attack": 2, "health": 6, "keywords": ["guard"], "onPlay": []
+}

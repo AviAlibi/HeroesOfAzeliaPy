@@ -1,8 +1,8 @@
 {
     "name": "Tempest Strait",
-    "description": "Two coasts frame a violent channel where winds collide over the sea.",
+    "description": "Winds collide over a violent channel. On play, inflict Grounded on all current enemy creatures. Enters exhausted.",
     "rarity": "rare",
-    "onPlay": null,
+    "onPlay": [{"action": "apply", "target": "all_enemies", "status": "grounded"}],
     "onDraw": null,
     "value": 3,
     "terrainType": ["sea", "air"]

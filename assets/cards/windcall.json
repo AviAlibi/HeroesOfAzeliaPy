@@ -1,0 +1,5 @@
+{
+    "name": "Windcall", "type": "spell", "description": "Grant Soaring to a friendly creature, giving Flying for three of its turns while air terrain remains.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["air"],
+    "onPlay": [{"action": "apply", "target": "ally", "status": "soaring"}]
+}

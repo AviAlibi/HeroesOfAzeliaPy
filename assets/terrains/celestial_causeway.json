@@ -1,8 +1,11 @@
 {
     "name": "Celestial Causeway",
-    "description": "A pale stone road bridges floating islands high above the world.",
+    "description": "A pale road bridges floating islands. On play, grant Soaring and Spellward to all current friendly creatures.",
     "rarity": "mythical",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "apply", "target": "all_allies", "status": "soaring"},
+        {"action": "apply", "target": "all_allies", "status": "spellward"}
+    ],
     "onDraw": null,
     "value": 5,
     "terrainType": ["air"]

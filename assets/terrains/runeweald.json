@@ -1,8 +1,11 @@
 {
     "name": "Runeweald",
-    "description": "Old runes glow faintly on trees that have watched over the forest for ages.",
+    "description": "Ancient runes glow on watchful trees. On play, grant Woodland Vigor and Spellward to all current friendly creatures.",
     "rarity": "epic",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "apply", "target": "all_allies", "status": "woodland_vigor"},
+        {"action": "apply", "target": "all_allies", "status": "spellward"}
+    ],
     "onDraw": null,
     "value": 4,
     "terrainType": ["land"]

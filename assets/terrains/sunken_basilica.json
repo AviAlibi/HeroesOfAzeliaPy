@@ -1,8 +1,11 @@
 {
     "name": "Sunken Basilica",
-    "description": "An ancient sanctuary rests below the waves, its bells still ringing.",
+    "description": "Sunken bells still ring. On play, remove Cursed and grant Regeneration to all current friendly creatures.",
     "rarity": "epic",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "remove", "target": "all_allies", "status": "cursed"},
+        {"action": "apply", "target": "all_allies", "status": "regeneration"}
+    ],
     "onDraw": null,
     "value": 4,
     "terrainType": ["sea"]

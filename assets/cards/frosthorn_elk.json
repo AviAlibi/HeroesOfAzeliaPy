@@ -1,0 +1,5 @@
+{
+    "name": "Frosthorn Elk", "type": "creature", "description": "A sturdy grazer whose antlers ring like ice in the mountain wind.",
+    "rarity": "common", "cost": 3, "requiresTerrain": ["land"],
+    "attack": 2, "health": 4, "keywords": [], "onPlay": []
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Squall Serpent", "type": "creature", "description": "Requires sea and air. On play, gains Soaring for three of its controller's turns while air remains.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["sea", "air"],
+    "attack": 4, "health": 3, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "soaring"}]
+}

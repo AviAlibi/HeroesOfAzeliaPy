@@ -1,8 +1,11 @@
 {
     "name": "Dawnspire",
-    "description": "The first sunlight touches a solitary tower rising from the mist.",
+    "description": "First sunlight touches a misty tower. On play, remove Cursed and heal 2 damage from all current friendly creatures. Enters exhausted.",
     "rarity": "rare",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "remove", "target": "all_allies", "status": "cursed"},
+        {"action": "heal", "target": "all_allies", "amount": 2}
+    ],
     "onDraw": null,
     "value": 3,
     "terrainType": ["land", "air"]

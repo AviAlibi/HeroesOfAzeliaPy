@@ -1,0 +1,5 @@
+{
+    "name": "Sunwing Lion", "type": "creature", "description": "Requires land and air. Flying and Lifesteal. Its radiant wings carry hope into battle.",
+    "rarity": "epic", "cost": 5, "requiresTerrain": ["land", "air"],
+    "attack": 4, "health": 4, "keywords": ["flying", "lifesteal"], "onPlay": []
+}

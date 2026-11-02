@@ -1,0 +1,5 @@
+{
+    "name": "Horizon Dragon", "type": "creature", "description": "Flying and Haste. A sweeping late-game threat with limited endurance.",
+    "rarity": "mythical", "cost": 7, "requiresTerrain": ["air"],
+    "attack": 7, "health": 5, "keywords": ["flying", "haste"], "onPlay": []
+}

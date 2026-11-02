@@ -1,8 +1,8 @@
 {
     "name": "Mirror Lake",
-    "description": "Still water reflects the surrounding peaks so perfectly that depth is hard to judge.",
+    "description": "Still water mirrors the peaks. On play, heal 2 damage from all current friendly creatures. Enters exhausted.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [{"action": "heal", "target": "all_allies", "amount": 2}],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land", "sea"]

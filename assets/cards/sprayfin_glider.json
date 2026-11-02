@@ -1,0 +1,6 @@
+{
+    "name": "Sprayfin Glider", "type": "creature", "description": "Requires sea and air. Flying. On play, gains Water Breathing; attackers need both abilities to reach it.",
+    "rarity": "rare", "cost": 3, "requiresTerrain": ["sea", "air"],
+    "attack": 2, "health": 3, "keywords": ["flying"],
+    "onPlay": [{"action": "apply", "target": "self", "status": "water_breathing"}]
+}

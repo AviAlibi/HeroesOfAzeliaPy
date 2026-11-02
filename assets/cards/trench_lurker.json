@@ -1,0 +1,6 @@
+{
+    "name": "Trench Lurker", "type": "creature", "description": "On play, gains Water Breathing. A powerful but vulnerable deep-sea ambusher.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["sea"],
+    "attack": 4, "health": 3, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "water_breathing"}]
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Spellward",
+    "description": "Grants Ward for two of the controller's turns, preventing selected enemy spells and enchants from targeting this creature. Area effects still work.",
+    "duration": 2,
+    "keywords": ["ward"]
+}

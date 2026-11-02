@@ -1,8 +1,8 @@
 {
     "name": "Whispering Marsh",
-    "description": "Reeds murmur in the fog, hiding paths that shift with every tide.",
+    "description": "Reeds murmur in the fog. On play, remove Burning from all current friendly creatures. Dual terrain enters exhausted.",
     "rarity": "common",
-    "onPlay": null,
+    "onPlay": [{"action": "remove", "target": "all_allies", "status": "burning"}],
     "onDraw": null,
     "value": 1,
     "terrainType": ["land", "sea"]

@@ -1,0 +1,5 @@
+{
+    "name": "Thunder Ram", "type": "creature", "description": "A sure-footed resident of the sky islands that prefers solid ground to flight.",
+    "rarity": "common", "cost": 3, "requiresTerrain": ["air"],
+    "attack": 3, "health": 3, "keywords": [], "onPlay": []
+}

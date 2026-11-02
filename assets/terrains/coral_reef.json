@@ -1,8 +1,8 @@
 {
     "name": "Coral Reef",
-    "description": "Bright coral towers shelter shoals of lanternfish beneath the waves.",
+    "description": "Bright coral towers shelter lanternfish. On play, grant Water Breathing to all current friendly creatures; it requires sea terrain and extinguishes Burning.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [{"action": "apply", "target": "all_allies", "status": "water_breathing"}],
     "onDraw": null,
     "value": 2,
     "terrainType": ["sea"]

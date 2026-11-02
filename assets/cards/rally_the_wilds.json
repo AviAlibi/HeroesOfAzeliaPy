@@ -1,0 +1,5 @@
+{
+    "name": "Rally the Wilds", "type": "spell", "description": "Grant Battle Fervor to every friendly creature, giving +2 attack for two of their controller's turns.",
+    "rarity": "rare", "cost": 4, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "all_allies", "status": "battle_fervor"}]
+}

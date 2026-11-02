@@ -1,0 +1,6 @@
+{
+    "name": "Starfall Wyrm", "type": "creature", "description": "On play, deals 1 damage to every enemy creature.",
+    "rarity": "mythical", "cost": 7, "requiresTerrain": ["land"],
+    "attack": 7, "health": 6, "keywords": [],
+    "onPlay": [{"action": "damage", "target": "all_enemies", "amount": 1}]
+}

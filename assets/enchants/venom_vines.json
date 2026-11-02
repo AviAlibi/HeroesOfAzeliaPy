@@ -1,0 +1,5 @@
+{
+    "name": "Venom Vines", "description": "Enchant an enemy with Poisoned, removing Regeneration and dealing 1 damage each of its turn ends.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "poisoned"}]
+}

@@ -1,0 +1,5 @@
+{
+    "name": "Granite Warden", "type": "creature", "description": "Guard. An ancient stone sentinel built to survive a prolonged siege.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["land"],
+    "attack": 2, "health": 6, "keywords": ["guard"], "onPlay": []
+}

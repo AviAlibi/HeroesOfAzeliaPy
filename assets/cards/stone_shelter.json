@@ -1,0 +1,5 @@
+{
+    "name": "Stone Shelter", "type": "spell", "description": "Grant Stone Skin to a friendly creature, adding 2 maximum health for three of its turns and removing Frail and Exposed.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "ally", "status": "stone_skin"}]
+}

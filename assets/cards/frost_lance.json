@@ -1,0 +1,8 @@
+{
+    "name": "Frost Lance", "type": "spell", "description": "Deal 2 damage and inflict Frostbite on an enemy creature for two of its turns.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["sea"],
+    "onPlay": [
+        {"action": "damage", "target": "enemy", "amount": 2},
+        {"action": "apply", "target": "enemy", "status": "frostbite"}
+    ]
+}

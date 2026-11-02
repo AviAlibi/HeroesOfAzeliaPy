@@ -1,0 +1,6 @@
+{
+    "name": "Stormpeak Giant", "type": "creature", "description": "Requires land and air. On play, deals 1 damage to every enemy creature.",
+    "rarity": "epic", "cost": 6, "requiresTerrain": ["land", "air"],
+    "attack": 6, "health": 6, "keywords": [],
+    "onPlay": [{"action": "damage", "target": "all_enemies", "amount": 1}]
+}

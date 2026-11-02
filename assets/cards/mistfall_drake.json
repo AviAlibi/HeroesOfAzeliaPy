@@ -1,0 +1,5 @@
+{
+    "name": "Mistfall Drake", "type": "creature", "description": "Requires land and air. Flying. Nests behind the waterfalls of the high basin.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["land", "air"],
+    "attack": 3, "health": 4, "keywords": ["flying"], "onPlay": []
+}

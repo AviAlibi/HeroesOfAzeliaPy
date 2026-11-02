@@ -1,0 +1,5 @@
+{
+    "name": "Healing Rain", "type": "spell", "description": "Heal 3 damage from a friendly creature. Cursed creatures cannot be healed.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["sea"],
+    "onPlay": [{"action": "heal", "target": "ally", "amount": 3}]
+}

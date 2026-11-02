@@ -1,0 +1,8 @@
+{
+    "name": "Windborne Focus",
+    "description": "Grants +1 attack for three of the controller's turns while air terrain is controlled. Removes Soaked.",
+    "duration": 3,
+    "requiresTerrain": ["air"],
+    "attack": 1,
+    "removes": ["soaked"]
+}

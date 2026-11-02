@@ -1,0 +1,5 @@
+{
+    "name": "Skyglass Moth", "type": "creature", "description": "Flying. Its crystalline wings are brilliant but fragile.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["air"],
+    "attack": 2, "health": 1, "keywords": ["flying"], "onPlay": []
+}

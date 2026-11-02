@@ -1,8 +1,11 @@
 {
     "name": "Mistfall Basin",
-    "description": "A ring of waterfalls feeds a cloud-filled basin hidden from the lowlands.",
+    "description": "Waterfalls fill a hidden basin with mist. On play, remove Burning and Grounded from all current friendly creatures. Enters exhausted.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "remove", "target": "all_allies", "status": "burning"},
+        {"action": "remove", "target": "all_allies", "status": "grounded"}
+    ],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land", "air"]

@@ -1,0 +1,6 @@
+{
+    "name": "Drowned Archivist", "type": "creature", "description": "On play, removes Burning from every friendly creature.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["sea"],
+    "attack": 2, "health": 5, "keywords": [],
+    "onPlay": [{"action": "remove", "target": "all_allies", "status": "burning"}]
+}

@@ -1,0 +1,5 @@
+{
+    "name": "Frostwake Bear", "type": "creature", "description": "Requires land and sea. A powerful swimmer prowling the edges of polar ice.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["land", "sea"],
+    "attack": 4, "health": 5, "keywords": [], "onPlay": []
+}

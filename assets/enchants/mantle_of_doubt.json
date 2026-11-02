@@ -1,0 +1,5 @@
+{
+    "name": "Mantle of Doubt", "description": "Enchant an enemy with Weakened, reducing attack by 2 and removing Battle Fervor.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": [],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "weakened"}]
+}

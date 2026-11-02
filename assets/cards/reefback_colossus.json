@@ -1,0 +1,5 @@
+{
+    "name": "Reefback Colossus", "type": "creature", "description": "Guard. Whole colonies of coral travel on this towering giant.",
+    "rarity": "epic", "cost": 6, "requiresTerrain": ["sea"],
+    "attack": 5, "health": 8, "keywords": ["guard"], "onPlay": []
+}

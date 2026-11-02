@@ -1,0 +1,8 @@
+{
+    "name": "Stormrunner's Pact", "description": "Enchant an ally with Swiftness and Windborne Focus. Haste remains without air terrain, but the attack bonus does not.",
+    "rarity": "rare", "cost": 3, "requiresTerrain": ["air"],
+    "onPlay": [
+        {"action": "apply", "target": "ally", "status": "swiftness"},
+        {"action": "apply", "target": "ally", "status": "windborne_focus"}
+    ]
+}

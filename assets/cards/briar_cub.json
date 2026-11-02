@@ -1,0 +1,5 @@
+{
+    "name": "Briar Cub", "type": "creature", "description": "A small woodland hunter that grows bold beneath the canopy.",
+    "rarity": "common", "cost": 1, "requiresTerrain": ["land"],
+    "attack": 1, "health": 2, "keywords": [], "onPlay": []
+}

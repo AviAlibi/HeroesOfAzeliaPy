@@ -1,8 +1,8 @@
 {
     "name": "Briarheart Thicket",
-    "description": "Thorny hedges guard a lush clearing at the center of the woodland.",
+    "description": "Thorny hedges guard a lush clearing. On play, grant Guardian to all current friendly creatures for three of their turns.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [{"action": "apply", "target": "all_allies", "status": "guardian"}],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land"]

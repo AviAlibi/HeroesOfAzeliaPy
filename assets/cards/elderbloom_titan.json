@@ -1,0 +1,6 @@
+{
+    "name": "Elderbloom Titan", "type": "creature", "description": "On play, heals 3 damage from every friendly creature.",
+    "rarity": "mythical", "cost": 7, "requiresTerrain": ["land"],
+    "attack": 6, "health": 8, "keywords": [],
+    "onPlay": [{"action": "heal", "target": "all_allies", "amount": 3}]
+}

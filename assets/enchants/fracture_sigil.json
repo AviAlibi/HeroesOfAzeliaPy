@@ -1,0 +1,5 @@
+{
+    "name": "Fracture Sigil", "description": "Enchant an enemy with Exposed, reducing maximum health by 2 and removing Stone Skin.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "exposed"}]
+}

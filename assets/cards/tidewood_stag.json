@@ -1,0 +1,6 @@
+{
+    "name": "Tidewood Stag", "type": "creature", "description": "Requires land and sea. On play, gains Tidal Vigor while sea terrain remains.",
+    "rarity": "rare", "cost": 4, "requiresTerrain": ["land", "sea"],
+    "attack": 4, "health": 4, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "tidal_vigor"}]
+}

@@ -1,0 +1,5 @@
+{
+    "name": "Thornstalker", "type": "creature", "description": "A balanced woodland predator that waits where the thorn paths converge.",
+    "rarity": "common", "cost": 3, "requiresTerrain": ["land"],
+    "attack": 3, "health": 3, "keywords": [], "onPlay": []
+}

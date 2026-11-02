@@ -1,0 +1,5 @@
+{
+    "name": "Nightwind Bat", "type": "creature", "description": "Flying and Lifesteal. Combat damage restores its controller's health, up to 25.",
+    "rarity": "uncommon", "cost": 2, "requiresTerrain": ["air"],
+    "attack": 2, "health": 1, "keywords": ["flying", "lifesteal"], "onPlay": []
+}

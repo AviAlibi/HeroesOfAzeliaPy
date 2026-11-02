@@ -1,0 +1,5 @@
+{
+    "name": "Crimson Covenant", "description": "Enchant an ally with Lifelink, turning its combat damage into health for its controller.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": [],
+    "onPlay": [{"action": "apply", "target": "ally", "status": "lifelink"}]
+}

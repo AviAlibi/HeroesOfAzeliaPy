@@ -1,8 +1,11 @@
 {
     "name": "Flying City",
-    "description": "A high-walled city sails the winds on the strength of old enchantments.",
+    "description": "An enchanted city sails the winds. On play, grant Soaring and Windborne Focus to all current friendly creatures while air terrain remains.",
     "rarity": "mythical",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "apply", "target": "all_allies", "status": "soaring"},
+        {"action": "apply", "target": "all_allies", "status": "windborne_focus"}
+    ],
     "onDraw": null,
     "value": 5,
     "terrainType": ["air"]

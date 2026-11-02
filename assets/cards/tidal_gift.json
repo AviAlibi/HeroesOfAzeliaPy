@@ -1,0 +1,5 @@
+{
+    "name": "Tidal Gift", "type": "spell", "description": "Grant Water Breathing to a friendly creature and extinguish Burning. Removed if its controller loses all sea terrain.",
+    "rarity": "common", "cost": 1, "requiresTerrain": ["sea"],
+    "onPlay": [{"action": "apply", "target": "ally", "status": "water_breathing"}]
+}

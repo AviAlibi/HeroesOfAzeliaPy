@@ -1,0 +1,5 @@
+{
+    "name": "Stormscale Wyvern", "type": "creature", "description": "Flying. Thick scales let this aerial predator weather most storms.",
+    "rarity": "rare", "cost": 5, "requiresTerrain": ["air"],
+    "attack": 4, "health": 5, "keywords": ["flying"], "onPlay": []
+}

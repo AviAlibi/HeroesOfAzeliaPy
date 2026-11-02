@@ -1,0 +1,5 @@
+{
+    "name": "Cloudwing Sparrow", "type": "creature", "description": "Flying. A tiny aerial scout that keeps watch above the floating islands.",
+    "rarity": "common", "cost": 1, "requiresTerrain": ["air"],
+    "attack": 1, "health": 1, "keywords": ["flying"], "onPlay": []
+}

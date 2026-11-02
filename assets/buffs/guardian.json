@@ -1,0 +1,6 @@
+{
+    "name": "Guardian",
+    "description": "Grants Guard for three of the controller's turns. Enemies must attack a reachable Guard before other targets.",
+    "duration": 3,
+    "keywords": ["guard"]
+}

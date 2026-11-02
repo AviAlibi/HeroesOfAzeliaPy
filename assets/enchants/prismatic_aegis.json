@@ -1,0 +1,5 @@
+{
+    "name": "Prismatic Aegis", "description": "Enchant an ally with Spellward. Selected enemy spells and enchants cannot target it, but area effects can.",
+    "rarity": "rare", "cost": 3, "requiresTerrain": ["air"],
+    "onPlay": [{"action": "apply", "target": "ally", "status": "spellward"}]
+}

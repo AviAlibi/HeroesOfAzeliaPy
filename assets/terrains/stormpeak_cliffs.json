@@ -1,8 +1,8 @@
 {
     "name": "Stormpeak Cliffs",
-    "description": "Lightning crowns these sheer heights while seabirds ride the gale.",
+    "description": "Lightning crowns the sheer cliffs. On play, grant Windborne Focus to all current friendly creatures. Enters exhausted.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [{"action": "apply", "target": "all_allies", "status": "windborne_focus"}],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land", "air"]

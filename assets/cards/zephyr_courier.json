@@ -1,0 +1,5 @@
+{
+    "name": "Zephyr Courier", "type": "creature", "description": "Flying and Haste. Carries urgent messages across the open sky.",
+    "rarity": "uncommon", "cost": 2, "requiresTerrain": ["air"],
+    "attack": 1, "health": 2, "keywords": ["flying", "haste"], "onPlay": []
+}

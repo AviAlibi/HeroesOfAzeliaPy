@@ -1,0 +1,5 @@
+{
+    "name": "Ashscale Drake", "type": "creature", "description": "Flying. A volcanic drake whose natural wings need no air enchantment.",
+    "rarity": "uncommon", "cost": 4, "requiresTerrain": ["land"],
+    "attack": 3, "health": 3, "keywords": ["flying"], "onPlay": []
+}

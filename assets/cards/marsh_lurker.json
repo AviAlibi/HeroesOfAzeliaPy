@@ -1,0 +1,5 @@
+{
+    "name": "Marsh Lurker", "type": "creature", "description": "Requires land and sea. An ambusher equally comfortable among reeds and shallow pools.",
+    "rarity": "common", "cost": 3, "requiresTerrain": ["land", "sea"],
+    "attack": 3, "health": 3, "keywords": [], "onPlay": []
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Lantern Fox", "type": "creature", "description": "On play, gains Regeneration, healing 1 at each of its next three turn ends.",
+    "rarity": "uncommon", "cost": 2, "requiresTerrain": ["land"],
+    "attack": 2, "health": 2, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "regeneration"}]
+}

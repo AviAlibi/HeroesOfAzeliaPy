@@ -1,8 +1,11 @@
 {
     "name": "Wyrm's Pass",
-    "description": "A narrow mountain pass bears the scorch marks of a wyrm's ancient flight.",
+    "description": "Ancient scorch marks line the narrow pass. On play, remove Rooted and Stunned from all current friendly creatures.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "remove", "target": "all_allies", "status": "rooted"},
+        {"action": "remove", "target": "all_allies", "status": "stunned"}
+    ],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land"]

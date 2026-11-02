@@ -1,0 +1,6 @@
+{
+    "name": "Lagoon Siren", "type": "creature", "description": "On play, inflicts Soaked on every enemy creature, reducing attack by 1 for three of their turns.",
+    "rarity": "rare", "cost": 3, "requiresTerrain": ["sea"],
+    "attack": 2, "health": 3, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "all_enemies", "status": "soaked"}]
+}

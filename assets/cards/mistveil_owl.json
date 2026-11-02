@@ -1,0 +1,5 @@
+{
+    "name": "Mistveil Owl", "type": "creature", "description": "Flying and Ward. Mist conceals it from selected enemy spells and enchants.",
+    "rarity": "rare", "cost": 3, "requiresTerrain": ["air"],
+    "attack": 2, "health": 3, "keywords": ["flying", "ward"], "onPlay": []
+}

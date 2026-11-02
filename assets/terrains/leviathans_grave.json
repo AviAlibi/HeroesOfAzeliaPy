@@ -1,8 +1,11 @@
 {
     "name": "Leviathan's Grave",
-    "description": "Pale ribs of a colossal sea beast form a reef beneath the waves.",
+    "description": "A colossal skeleton forms a pale reef. On play, inflict Weakened and Cursed on all current enemy creatures.",
     "rarity": "epic",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "apply", "target": "all_enemies", "status": "weakened"},
+        {"action": "apply", "target": "all_enemies", "status": "cursed"}
+    ],
     "onDraw": null,
     "value": 4,
     "terrainType": ["sea"]

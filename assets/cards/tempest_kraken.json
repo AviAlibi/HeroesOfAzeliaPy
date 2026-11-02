@@ -1,0 +1,6 @@
+{
+    "name": "Tempest Kraken", "type": "creature", "description": "On play, inflicts Soaked on every enemy creature as a wall of water breaks across the field.",
+    "rarity": "mythical", "cost": 7, "requiresTerrain": ["sea"],
+    "attack": 6, "health": 7, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "all_enemies", "status": "soaked"}]
+}

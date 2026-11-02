@@ -1,0 +1,8 @@
+{
+    "name": "Soaring",
+    "description": "Grants Flying for three of the controller's turns. Requires air terrain and removes Grounded.",
+    "duration": 3,
+    "requiresTerrain": ["air"],
+    "keywords": ["flying"],
+    "removes": ["grounded"]
+}

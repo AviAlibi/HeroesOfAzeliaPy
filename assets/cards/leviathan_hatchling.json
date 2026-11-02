@@ -1,0 +1,6 @@
+{
+    "name": "Leviathan Hatchling", "type": "creature", "description": "On play, gains Water Breathing. Already large enough to overturn a fishing boat.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["sea"],
+    "attack": 2, "health": 4, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "water_breathing"}]
+}

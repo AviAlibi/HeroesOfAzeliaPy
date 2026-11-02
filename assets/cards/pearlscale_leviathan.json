@@ -1,0 +1,6 @@
+{
+    "name": "Pearlscale Leviathan", "type": "creature", "description": "On play, gains Water Breathing. A majestic finisher whose refuge depends on the sea.",
+    "rarity": "mythical", "cost": 7, "requiresTerrain": ["sea"],
+    "attack": 7, "health": 7, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "water_breathing"}]
+}

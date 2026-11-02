@@ -1,8 +1,11 @@
 {
     "name": "Brineveil Lagoon",
-    "description": "A veil of salt mist hides the lagoon's sheltered coves from passing ships.",
+    "description": "Salt mist hides sheltered coves. On play, remove Burning and Frostbite from all current friendly creatures.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "remove", "target": "all_allies", "status": "burning"},
+        {"action": "remove", "target": "all_allies", "status": "frostbite"}
+    ],
     "onDraw": null,
     "value": 2,
     "terrainType": ["sea"]

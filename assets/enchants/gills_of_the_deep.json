@@ -1,0 +1,8 @@
+{
+    "name": "Gills of the Deep", "description": "Enchant an ally with Water Breathing and Tidal Vigor. Both end when you lose your last sea terrain.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["sea"],
+    "onPlay": [
+        {"action": "apply", "target": "ally", "status": "water_breathing"},
+        {"action": "apply", "target": "ally", "status": "tidal_vigor"}
+    ]
+}

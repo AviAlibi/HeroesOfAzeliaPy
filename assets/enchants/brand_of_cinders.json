@@ -1,0 +1,5 @@
+{
+    "name": "Brand of Cinders", "description": "Enchant an enemy with Burning. It takes 1 damage each of its turn ends until the brand is removed or extinguished.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "burning"}]
+}

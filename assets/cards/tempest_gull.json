@@ -1,0 +1,5 @@
+{
+    "name": "Tempest Gull", "type": "creature", "description": "Requires sea and air. Flying. A bold scavenger that thrives on storm-tossed coasts.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["sea", "air"],
+    "attack": 2, "health": 2, "keywords": ["flying"], "onPlay": []
+}

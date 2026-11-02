@@ -1,8 +1,8 @@
 {
     "name": "Lanternwood",
-    "description": "Glowing seedpods light a winding trail through the deep forest.",
+    "description": "Glowing seedpods light the forest trail. On play, grant Regeneration to all current friendly creatures for three of their turns.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [{"action": "apply", "target": "all_allies", "status": "regeneration"}],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land"]

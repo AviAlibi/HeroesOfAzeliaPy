@@ -1,0 +1,5 @@
+{
+    "name": "Dusk Hex", "type": "spell", "description": "Inflict Cursed on an enemy creature for three of its turns, preventing healing and removing Regeneration.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["land"],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "cursed"}]
+}

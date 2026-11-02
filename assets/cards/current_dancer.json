@@ -1,0 +1,5 @@
+{
+    "name": "Current Dancer", "type": "creature", "description": "Haste. A swift river spirit able to attack on the turn it enters.",
+    "rarity": "uncommon", "cost": 2, "requiresTerrain": ["sea"],
+    "attack": 2, "health": 2, "keywords": ["haste"], "onPlay": []
+}

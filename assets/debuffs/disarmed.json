@@ -1,0 +1,7 @@
+{
+    "name": "Disarmed",
+    "description": "Sets attack to zero for two of the controller's turns, including retaliation damage. Removes Battle Fervor.",
+    "duration": 2,
+    "keywords": ["disarmed"],
+    "removes": ["battle_fervor"]
+}

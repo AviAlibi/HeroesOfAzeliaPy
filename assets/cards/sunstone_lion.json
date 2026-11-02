@@ -1,0 +1,5 @@
+{
+    "name": "Sunstone Lion", "type": "creature", "description": "A proud territorial hunter with an even balance of power and endurance.",
+    "rarity": "common", "cost": 4, "requiresTerrain": ["land"],
+    "attack": 4, "health": 4, "keywords": [], "onPlay": []
+}

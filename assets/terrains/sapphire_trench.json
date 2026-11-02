@@ -1,8 +1,11 @@
 {
     "name": "Sapphire Trench",
-    "description": "A vast ocean chasm descends into water dark as polished blue stone.",
+    "description": "A chasm descends into sapphire darkness. On play, inflict Soaked and Weakened on all current enemy creatures.",
     "rarity": "epic",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "apply", "target": "all_enemies", "status": "soaked"},
+        {"action": "apply", "target": "all_enemies", "status": "weakened"}
+    ],
     "onDraw": null,
     "value": 4,
     "terrainType": ["sea"]

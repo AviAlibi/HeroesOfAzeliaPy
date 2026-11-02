@@ -1,0 +1,5 @@
+{
+    "name": "Abyssal Angler", "type": "creature", "description": "A patient deepwater predator with a lure brighter than any lantern.",
+    "rarity": "common", "cost": 3, "requiresTerrain": ["sea"],
+    "attack": 3, "health": 3, "keywords": [], "onPlay": []
+}

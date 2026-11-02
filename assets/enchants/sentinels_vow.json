@@ -1,0 +1,8 @@
+{
+    "name": "Sentinel's Vow", "description": "Enchant an ally with Guardian and Stone Skin, granting Guard and +2 maximum health.",
+    "rarity": "rare", "cost": 4, "requiresTerrain": ["land"],
+    "onPlay": [
+        {"action": "apply", "target": "ally", "status": "guardian"},
+        {"action": "apply", "target": "ally", "status": "stone_skin"}
+    ]
+}

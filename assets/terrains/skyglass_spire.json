@@ -1,8 +1,11 @@
 {
     "name": "Skyglass Spire",
-    "description": "A needle of blue crystal pierces the clouds and catches the dawn.",
+    "description": "Blue crystal catches the dawn. On play, grant Windborne Focus and Spellward to all current friendly creatures.",
     "rarity": "epic",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "apply", "target": "all_allies", "status": "windborne_focus"},
+        {"action": "apply", "target": "all_allies", "status": "spellward"}
+    ],
     "onDraw": null,
     "value": 4,
     "terrainType": ["air"]

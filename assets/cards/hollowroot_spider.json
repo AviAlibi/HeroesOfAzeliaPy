@@ -1,0 +1,5 @@
+{
+    "name": "Hollowroot Spider", "type": "creature", "description": "Guard. Its web closes the narrow passages beneath the forest.",
+    "rarity": "common", "cost": 2, "requiresTerrain": ["land"],
+    "attack": 1, "health": 3, "keywords": ["guard"], "onPlay": []
+}

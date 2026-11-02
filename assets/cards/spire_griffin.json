@@ -1,0 +1,5 @@
+{
+    "name": "Spire Griffin", "type": "creature", "description": "Flying. A dependable aerial mount nesting among the highest towers.",
+    "rarity": "common", "cost": 4, "requiresTerrain": ["air"],
+    "attack": 3, "health": 4, "keywords": ["flying"], "onPlay": []
+}

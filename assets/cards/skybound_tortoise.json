@@ -1,0 +1,5 @@
+{
+    "name": "Skybound Tortoise", "type": "creature", "description": "Flying and Guard. Its broad shell shelters travelers crossing the sky.",
+    "rarity": "rare", "cost": 5, "requiresTerrain": ["air"],
+    "attack": 2, "health": 7, "keywords": ["flying", "guard"], "onPlay": []
+}

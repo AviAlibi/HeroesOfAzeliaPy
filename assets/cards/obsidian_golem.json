@@ -1,0 +1,5 @@
+{
+    "name": "Obsidian Golem", "type": "creature", "description": "Guard. Polished volcanic stone gives this defender formidable staying power.",
+    "rarity": "rare", "cost": 5, "requiresTerrain": ["land"],
+    "attack": 4, "health": 6, "keywords": ["guard"], "onPlay": []
+}

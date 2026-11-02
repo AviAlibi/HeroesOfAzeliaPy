@@ -1,0 +1,8 @@
+{
+    "name": "Water Breathing",
+    "description": "Only another creature with Water Breathing can attack this creature. Removed permanently if its controller has no sea terrain. Extinguishes Burning.",
+    "duration": null,
+    "requiresTerrain": ["sea"],
+    "keywords": ["water_breathing"],
+    "removes": ["burning"]
+}

@@ -1,0 +1,6 @@
+{
+    "name": "Pearl Healer", "type": "creature", "description": "On play, heals 2 damage from every friendly creature.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["sea"],
+    "attack": 1, "health": 4, "keywords": [],
+    "onPlay": [{"action": "heal", "target": "all_allies", "amount": 2}]
+}

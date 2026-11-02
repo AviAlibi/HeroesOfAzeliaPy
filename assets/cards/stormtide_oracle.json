@@ -1,0 +1,6 @@
+{
+    "name": "Stormtide Oracle", "type": "creature", "description": "Requires sea and air. On play, inflicts Grounded on every enemy creature for two of their turns.",
+    "rarity": "rare", "cost": 5, "requiresTerrain": ["sea", "air"],
+    "attack": 3, "health": 5, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "all_enemies", "status": "grounded"}]
+}

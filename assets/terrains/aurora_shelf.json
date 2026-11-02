@@ -1,8 +1,8 @@
 {
     "name": "Aurora Shelf",
-    "description": "Green and violet lights ripple above an immense shelf of polar ice.",
+    "description": "Auroras ripple above polar ice. On play, inflict Frostbite on all current enemy creatures for two of their turns. Enters exhausted.",
     "rarity": "rare",
-    "onPlay": null,
+    "onPlay": [{"action": "apply", "target": "all_enemies", "status": "frostbite"}],
     "onDraw": null,
     "value": 3,
     "terrainType": ["land", "sea"]

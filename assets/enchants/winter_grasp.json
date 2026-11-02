@@ -1,0 +1,5 @@
+{
+    "name": "Winter Grasp", "description": "Enchant an enemy with Frostbite, reducing attack by 1 and dealing 1 damage each of its turn ends.",
+    "rarity": "rare", "cost": 4, "requiresTerrain": ["sea"],
+    "onPlay": [{"action": "apply", "target": "enemy", "status": "frostbite"}]
+}

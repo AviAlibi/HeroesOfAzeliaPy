@@ -1,8 +1,11 @@
 {
     "name": "Isle of Last Light",
-    "description": "At the edge of the map, a lonely island holds the day's final sunset.",
+    "description": "The last sunset warms a lonely island. On play, grant Tidal Vigor and Lifelink to all current friendly creatures. Enters exhausted.",
     "rarity": "mythical",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "apply", "target": "all_allies", "status": "tidal_vigor"},
+        {"action": "apply", "target": "all_allies", "status": "lifelink"}
+    ],
     "onDraw": null,
     "value": 5,
     "terrainType": ["land", "sea"]

@@ -1,0 +1,5 @@
+{
+    "name": "Lightning Roc", "type": "creature", "description": "Flying and Haste. Strikes in a flash before the thunder arrives.",
+    "rarity": "epic", "cost": 5, "requiresTerrain": ["air"],
+    "attack": 5, "health": 3, "keywords": ["flying", "haste"], "onPlay": []
+}

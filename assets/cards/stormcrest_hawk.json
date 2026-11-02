@@ -1,0 +1,5 @@
+{
+    "name": "Stormcrest Hawk", "type": "creature", "description": "Flying. A sharp-eyed hunter that dives through the heart of a storm.",
+    "rarity": "common", "cost": 3, "requiresTerrain": ["air"],
+    "attack": 3, "health": 2, "keywords": ["flying"], "onPlay": []
+}

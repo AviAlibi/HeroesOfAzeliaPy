@@ -1,0 +1,6 @@
+{
+    "name": "Confluence Avatar", "type": "creature", "description": "Requires land, sea, and air. Ward. On play, heals 2 damage from every friendly creature.",
+    "rarity": "mythical", "cost": 7, "requiresTerrain": ["land", "sea", "air"],
+    "attack": 6, "health": 7, "keywords": ["ward"],
+    "onPlay": [{"action": "heal", "target": "all_allies", "amount": 2}]
+}

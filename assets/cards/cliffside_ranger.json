@@ -1,0 +1,5 @@
+{
+    "name": "Cliffside Ranger", "type": "creature", "description": "Requires land and air. Guard. Keeps watch over the narrow mountain approaches.",
+    "rarity": "common", "cost": 3, "requiresTerrain": ["land", "air"],
+    "attack": 3, "health": 3, "keywords": ["guard"], "onPlay": []
+}

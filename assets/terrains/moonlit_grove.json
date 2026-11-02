@@ -1,8 +1,11 @@
 {
     "name": "Moonlit Grove",
-    "description": "Silver leaves shimmer where moonlight gathers among ancient trees.",
+    "description": "Moonlight gathers on silver leaves. On play, remove Cursed and Poisoned from all current friendly creatures.",
     "rarity": "uncommon",
-    "onPlay": null,
+    "onPlay": [
+        {"action": "remove", "target": "all_allies", "status": "cursed"},
+        {"action": "remove", "target": "all_allies", "status": "poisoned"}
+    ],
     "onDraw": null,
     "value": 2,
     "terrainType": ["land"]

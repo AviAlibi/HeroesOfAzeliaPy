@@ -1,0 +1,6 @@
+{
+    "name": "Briarheart Dryad", "type": "creature", "description": "On play, gains Regeneration and removes Poisoned from itself.",
+    "rarity": "uncommon", "cost": 3, "requiresTerrain": ["land"],
+    "attack": 2, "health": 3, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "regeneration"}]
+}

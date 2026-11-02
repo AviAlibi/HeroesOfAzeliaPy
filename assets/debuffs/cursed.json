@@ -1,0 +1,7 @@
+{
+    "name": "Cursed",
+    "description": "Prevents this creature from healing damage for three of the controller's turns. Removes Regeneration.",
+    "duration": 3,
+    "keywords": ["no_healing"],
+    "removes": ["regeneration"]
+}

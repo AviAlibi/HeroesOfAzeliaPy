@@ -1,0 +1,9 @@
+{
+    "name": "Tidal Vigor",
+    "description": "Grants +1 attack and +1 maximum health for three of the controller's turns while sea terrain is controlled. Extinguishes Burning.",
+    "duration": 3,
+    "requiresTerrain": ["sea"],
+    "attack": 1,
+    "health": 1,
+    "removes": ["burning"]
+}

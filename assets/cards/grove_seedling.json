@@ -1,0 +1,6 @@
+{
+    "name": "Grove Seedling", "type": "creature", "description": "On play, gains Woodland Vigor: +1 attack and +1 maximum health for two of its controller's turns while land remains.",
+    "rarity": "common", "cost": 1, "requiresTerrain": ["land"],
+    "attack": 1, "health": 1, "keywords": [],
+    "onPlay": [{"action": "apply", "target": "self", "status": "woodland_vigor"}]
+}
