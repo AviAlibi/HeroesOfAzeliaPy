@@ -1,0 +1,8 @@
+{
+    "name": "Mountain",
+    "rarity": "common",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 1,
+    "terrainType": ["land"]
+}
