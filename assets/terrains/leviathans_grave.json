@@ -1,0 +1,9 @@
+{
+    "name": "Leviathan's Grave",
+    "description": "Pale ribs of a colossal sea beast form a reef beneath the waves.",
+    "rarity": "epic",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 4,
+    "terrainType": ["sea"]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Silvercurrent Delta",
+    "description": "Braided rivers spread through bright reeds before meeting the open sea.",
+    "rarity": "uncommon",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 2,
+    "terrainType": ["land", "sea"]
+}

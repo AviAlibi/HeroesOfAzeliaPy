@@ -1,0 +1,9 @@
+{
+    "name": "Aurora Shelf",
+    "description": "Green and violet lights ripple above an immense shelf of polar ice.",
+    "rarity": "rare",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 3,
+    "terrainType": ["land", "sea"]
+}

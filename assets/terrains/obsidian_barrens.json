@@ -1,0 +1,9 @@
+{
+    "name": "Obsidian Barrens",
+    "description": "Dark volcanic plains stretch beneath a sky veiled in ash.",
+    "rarity": "uncommon",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 2,
+    "terrainType": ["land"]
+}

@@ -1,5 +1,6 @@
 {
     "name": "Beach",
+    "description": "Warm sand and shallow surf make a quiet meeting point between land and sea.",
     "rarity": "rare",
     "onPlay": null,
     "onDraw": null,

@@ -1,5 +1,6 @@
 {
     "name": "Mountain",
+    "description": "A rugged peak rises above the clouds, its trails known to hardy travelers.",
     "rarity": "common",
     "onPlay": null,
     "onDraw": null,

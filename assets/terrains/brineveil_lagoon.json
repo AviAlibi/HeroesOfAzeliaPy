@@ -1,0 +1,9 @@
+{
+    "name": "Brineveil Lagoon",
+    "description": "A veil of salt mist hides the lagoon's sheltered coves from passing ships.",
+    "rarity": "uncommon",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 2,
+    "terrainType": ["sea"]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Lanternwood",
+    "description": "Glowing seedpods light a winding trail through the deep forest.",
+    "rarity": "uncommon",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 2,
+    "terrainType": ["land"]
+}

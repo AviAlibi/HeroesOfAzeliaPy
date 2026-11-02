@@ -1,0 +1,9 @@
+{
+    "name": "Cindersteppe",
+    "description": "Wind sweeps red cinders across a dry plain of scorched grass.",
+    "rarity": "common",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 1,
+    "terrainType": ["land"]
+}

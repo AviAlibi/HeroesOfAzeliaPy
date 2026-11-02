@@ -1,0 +1,9 @@
+{
+    "name": "Gloaming Fen",
+    "description": "Blue marsh lights drift above pools too deep to measure.",
+    "rarity": "uncommon",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 2,
+    "terrainType": ["land", "sea"]
+}

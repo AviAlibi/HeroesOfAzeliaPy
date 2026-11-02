@@ -1,0 +1,9 @@
+{
+    "name": "Verdant Hollow",
+    "description": "A sheltered valley flourishes with luminous grasses and giant ferns.",
+    "rarity": "common",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 1,
+    "terrainType": ["land"]
+}

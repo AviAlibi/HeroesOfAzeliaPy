@@ -1,5 +1,6 @@
 {
     "name": "Forest",
+    "description": "Ancient trees crowd together, sheltering countless small lives beneath their canopy.",
     "rarity": "common",
     "onPlay": null,
     "onDraw": null,

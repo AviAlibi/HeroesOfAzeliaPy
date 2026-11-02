@@ -1,0 +1,9 @@
+{
+    "name": "Blooming Wilds",
+    "description": "Wildflowers cover rolling hills in a vivid carpet of color.",
+    "rarity": "common",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 1,
+    "terrainType": ["land"]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Runeweald",
+    "description": "Old runes glow faintly on trees that have watched over the forest for ages.",
+    "rarity": "epic",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 4,
+    "terrainType": ["land"]
+}

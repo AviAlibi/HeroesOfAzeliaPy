@@ -1,0 +1,9 @@
+{
+    "name": "Sunken Basilica",
+    "description": "An ancient sanctuary rests below the waves, its bells still ringing.",
+    "rarity": "epic",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 4,
+    "terrainType": ["sea"]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Tidal Archipelago",
+    "description": "Low islands emerge and vanish as the ocean breathes around them.",
+    "rarity": "uncommon",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 2,
+    "terrainType": ["land", "sea"]
+}

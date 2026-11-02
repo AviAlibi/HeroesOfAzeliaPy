@@ -1,0 +1,9 @@
+{
+    "name": "Frostbound Vale",
+    "description": "Snow blankets the silent vale, preserving every footprint in ice.",
+    "rarity": "common",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 1,
+    "terrainType": ["land"]
+}

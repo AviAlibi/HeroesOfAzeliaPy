@@ -1,0 +1,9 @@
+{
+    "name": "Nightglass Expanse",
+    "description": "A dark, reflective plain mirrors the stars with uncanny clarity.",
+    "rarity": "epic",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 4,
+    "terrainType": ["land"]
+}

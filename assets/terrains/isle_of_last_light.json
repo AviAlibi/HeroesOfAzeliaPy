@@ -1,0 +1,9 @@
+{
+    "name": "Isle of Last Light",
+    "description": "At the edge of the map, a lonely island holds the day's final sunset.",
+    "rarity": "mythical",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 5,
+    "terrainType": ["land", "sea"]
+}

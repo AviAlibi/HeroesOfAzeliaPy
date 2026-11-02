@@ -1,0 +1,9 @@
+{
+    "name": "Duskmire",
+    "description": "Twilight lingers over this murky wetland long after night has fallen.",
+    "rarity": "common",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 1,
+    "terrainType": ["land", "sea"]
+}

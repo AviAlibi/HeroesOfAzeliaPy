@@ -1,6 +1,7 @@
 {
     "name": "Coral Reef",
-    "rarity": "common",
+    "description": "Bright coral towers shelter shoals of lanternfish beneath the waves.",
+    "rarity": "uncommon",
     "onPlay": null,
     "onDraw": null,
     "value": 2,

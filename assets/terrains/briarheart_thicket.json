@@ -1,0 +1,9 @@
+{
+    "name": "Briarheart Thicket",
+    "description": "Thorny hedges guard a lush clearing at the center of the woodland.",
+    "rarity": "uncommon",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 2,
+    "terrainType": ["land"]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Farwatch Summit",
+    "description": "From this wind-scoured summit, distant ships and storms are visible for miles.",
+    "rarity": "uncommon",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 2,
+    "terrainType": ["land", "air"]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Skyglass Spire",
+    "description": "A needle of blue crystal pierces the clouds and catches the dawn.",
+    "rarity": "epic",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 4,
+    "terrainType": ["air"]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Starfall Crater",
+    "description": "A fallen star left a glassy basin that glows after sunset.",
+    "rarity": "mythical",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 5,
+    "terrainType": ["land"]
+}

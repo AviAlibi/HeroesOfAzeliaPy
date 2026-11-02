@@ -1,0 +1,9 @@
+{
+    "name": "Mirror Lake",
+    "description": "Still water reflects the surrounding peaks so perfectly that depth is hard to judge.",
+    "rarity": "uncommon",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 2,
+    "terrainType": ["land", "sea"]
+}

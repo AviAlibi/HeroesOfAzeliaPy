@@ -1,0 +1,9 @@
+{
+    "name": "Dragonfire Peak",
+    "description": "A smoldering summit bears the unmistakable mark of a dragon's lair.",
+    "rarity": "mythical",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 5,
+    "terrainType": ["land"]
+}

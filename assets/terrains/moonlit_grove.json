@@ -1,0 +1,9 @@
+{
+    "name": "Moonlit Grove",
+    "description": "Silver leaves shimmer where moonlight gathers among ancient trees.",
+    "rarity": "uncommon",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 2,
+    "terrainType": ["land"]
+}

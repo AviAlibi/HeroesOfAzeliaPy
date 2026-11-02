@@ -1,0 +1,9 @@
+{
+    "name": "Wind-Carved Reach",
+    "description": "Stone arches span a high desert sculpted by centuries of wind.",
+    "rarity": "rare",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 3,
+    "terrainType": ["land", "air"]
+}

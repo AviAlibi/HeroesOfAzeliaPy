@@ -1,0 +1,9 @@
+{
+    "name": "Flying City",
+    "description": "A high-walled city sails the winds on the strength of old enchantments.",
+    "rarity": "mythical",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 5,
+    "terrainType": ["air"]
+}

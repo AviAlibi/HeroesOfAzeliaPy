@@ -1,0 +1,9 @@
+{
+    "name": "Ashen Caldera",
+    "description": "A ring of black cliffs surrounds the glowing heart of a sleeping volcano.",
+    "rarity": "rare",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 3,
+    "terrainType": ["land"]
+}

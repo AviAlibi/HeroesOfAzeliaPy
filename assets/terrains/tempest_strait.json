@@ -1,0 +1,9 @@
+{
+    "name": "Tempest Strait",
+    "description": "Two coasts frame a violent channel where winds collide over the sea.",
+    "rarity": "rare",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 3,
+    "terrainType": ["sea", "air"]
+}

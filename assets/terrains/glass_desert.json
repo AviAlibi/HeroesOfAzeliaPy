@@ -1,0 +1,9 @@
+{
+    "name": "Glass Desert",
+    "description": "The dunes have melted into a glittering sea of sharp, translucent sand.",
+    "rarity": "rare",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 3,
+    "terrainType": ["land"]
+}

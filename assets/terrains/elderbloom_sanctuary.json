@@ -1,0 +1,9 @@
+{
+    "name": "Elderbloom Sanctuary",
+    "description": "A garden of enormous flowers surrounds a grove untouched by war.",
+    "rarity": "mythical",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 5,
+    "terrainType": ["land"]
+}

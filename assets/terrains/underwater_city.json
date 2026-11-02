@@ -1,0 +1,9 @@
+{
+    "name": "Underwater City",
+    "description": "Pearl-lit avenues wind through a city built beneath the ocean's surface.",
+    "rarity": "epic",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 4,
+    "terrainType": ["sea"]
+}

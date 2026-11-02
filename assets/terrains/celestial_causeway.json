@@ -1,0 +1,9 @@
+{
+    "name": "Celestial Causeway",
+    "description": "A pale stone road bridges floating islands high above the world.",
+    "rarity": "mythical",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 5,
+    "terrainType": ["air"]
+}

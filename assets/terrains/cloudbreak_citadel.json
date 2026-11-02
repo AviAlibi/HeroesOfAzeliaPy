@@ -1,0 +1,9 @@
+{
+    "name": "Cloudbreak Citadel",
+    "description": "A fortress perched above the clouds keeps watch over the far horizon.",
+    "rarity": "epic",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 4,
+    "terrainType": ["air"]
+}

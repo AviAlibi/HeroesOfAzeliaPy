@@ -1,0 +1,9 @@
+{
+    "name": "Stormpeak Cliffs",
+    "description": "Lightning crowns these sheer heights while seabirds ride the gale.",
+    "rarity": "uncommon",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 2,
+    "terrainType": ["land", "air"]
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Sapphire Trench",
+    "description": "A vast ocean chasm descends into water dark as polished blue stone.",
+    "rarity": "epic",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 4,
+    "terrainType": ["sea"]
+}

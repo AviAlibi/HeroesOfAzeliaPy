@@ -1,0 +1,9 @@
+{
+    "name": "Floating Island",
+    "description": "A green fragment of earth drifts through the open sky.",
+    "rarity": "common",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 1,
+    "terrainType": ["air"]
+}

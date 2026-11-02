@@ -1,0 +1,9 @@
+{
+    "name": "Echoing Ravine",
+    "description": "Every call returns many times from the narrow walls of this deep gorge.",
+    "rarity": "common",
+    "onPlay": null,
+    "onDraw": null,
+    "value": 1,
+    "terrainType": ["land"]
+}
